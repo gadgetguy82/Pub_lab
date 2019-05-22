@@ -29,6 +29,14 @@ class Pub
     end
   end
 
+  def stock_value(drink)
+    return @drinks[drink] * drink.price
+  end
+
+  def reduce_stock_value(drink)
+    return @drinks[drink] -= 1
+  end
+
 
 
 
